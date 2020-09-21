@@ -35,5 +35,5 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/ColinDuquesnoy/MellowPlayer
-        tag: "3.6.6-flathub-fixes3"
-        commit: "399cea8ba8828d57a1ea1a32458cf21d02517bb0"
+        tag: "3.6.6-flathub-fixes4"
+        commit: "76c21c5b1880e2252536669a3b200aadcc9ad29a"
