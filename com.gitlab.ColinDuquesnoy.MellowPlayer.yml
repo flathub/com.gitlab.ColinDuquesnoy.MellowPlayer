@@ -30,10 +30,35 @@ modules:
       - type: archive
         url: https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.9.tar.xz
         sha256: 66c0517ed16df7af258e83208faaf5069727dfd66995c4bbc51c16954d674761
+  - name: Boost.DI
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/include/boost
+      - cp -R include/boost /app/include
+      - cp -R extension/include/boost -t /app/include
+    sources:
+      - type: git
+        url: https://github.com/boost-ext/di.git
+        tag: v1.2.0
+        commit: "6078f073feb8560127fbf0308b3794a551146252"
+  - name: QHotkey
+    buildsystem: cmake-ninja
+    sources:
+      - type: git
+        url: https://github.com/Skycoder42/QHotkey.git
+        branch: master
+        commit: "bd35d8b07a0bff99238d72055fc43a2be4df38aa"
+  - name: spdlog
+    buildsystem: cmake-ninja
+    sources:
+      - type: git
+        url: https://github.com/gabime/spdlog.git
+        tag: v1.8.0
+        commit: "4a9ccf7e38e257feecce0c579a782741254eaeef"  
   - name: MellowPlayer
     buildsystem: cmake-ninja
     sources:
       - type: git
         url: https://gitlab.com/ColinDuquesnoy/MellowPlayer
         branch: master
-        commit: "eea185d8f1a34a749add463e32932ecf22640c8b"
+        commit: "a15717811e02c1d36f6df7432d19986715fb0f0a"
