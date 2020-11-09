@@ -18,6 +18,8 @@ finish-args:
   - --talk-name=org.kde.StatusNotifierWatcher
   - --own-name=org.kde.*
   - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.freedesktop.PowerManagement
+  - --talk-name=org.gnome.SessionManager
 rename-desktop-file: "mellowplayer.desktop"
 rename-icon: "mellowplayer"
 modules:
