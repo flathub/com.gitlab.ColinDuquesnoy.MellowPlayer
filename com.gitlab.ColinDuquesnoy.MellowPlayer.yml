@@ -62,4 +62,4 @@ modules:
         url: https://gitlab.com/ColinDuquesnoy/MellowPlayer
         branch: master
         disable-shallow-clone: true
-        commit: "35c74eb8ba3e4c9abac9966fad9bde0421d29b21"
+        commit: "fcb0b57fef31a54f04580568a0db5f95cc101d6f"
