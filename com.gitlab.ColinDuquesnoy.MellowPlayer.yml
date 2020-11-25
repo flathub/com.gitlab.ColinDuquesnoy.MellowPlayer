@@ -18,6 +18,7 @@ finish-args:
   - --talk-name=org.kde.StatusNotifierWatcher
   - --own-name=org.kde.*
   - --talk-name=org.freedesktop.Notifications
+rename-desktop-file: "ColinDuquesnoy.gitlab.com.MellowPlayer.desktop"
 rename-icon: "mellowplayer"
 modules:
   - name: libnotify
