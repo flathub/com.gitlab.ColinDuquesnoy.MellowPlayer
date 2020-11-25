@@ -50,6 +50,8 @@ modules:
         commit: "eb7ddaba57b108f99c2fefcd4eb23cef9c0ed681"
   - name: spdlog
     buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_POSITION_INDEPENDENT_CODE=ON
     sources:
       - type: git
         url: https://github.com/gabime/spdlog.git
@@ -57,6 +59,8 @@ modules:
         commit: "4a9ccf7e38e257feecce0c579a782741254eaeef"  
   - name: MellowPlayer
     buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_POSITION_INDEPENDENT_CODE=ON
     sources:
       - type: git
         url: https://gitlab.com/ColinDuquesnoy/MellowPlayer
