@@ -46,8 +46,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Skycoder42/QHotkey.git
-        branch: master
-        commit: "bd35d8b07a0bff99238d72055fc43a2be4df38aa"
+        tag: 1.4.2
+        commit: "eb7ddaba57b108f99c2fefcd4eb23cef9c0ed681"
   - name: spdlog
     buildsystem: cmake-ninja
     sources:
