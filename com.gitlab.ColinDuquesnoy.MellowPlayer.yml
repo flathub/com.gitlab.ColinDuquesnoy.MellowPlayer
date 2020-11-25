@@ -18,7 +18,6 @@ finish-args:
   - --talk-name=org.kde.StatusNotifierWatcher
   - --own-name=org.kde.*
   - --talk-name=org.freedesktop.Notifications
-rename-desktop-file: "mellowplayer.desktop"
 rename-icon: "mellowplayer"
 modules:
   - name: libnotify
@@ -66,4 +65,4 @@ modules:
         url: https://gitlab.com/ColinDuquesnoy/MellowPlayer
         branch: master
         disable-shallow-clone: true
-        commit: "fcb0b57fef31a54f04580568a0db5f95cc101d6f"
+        commit: "3adf0629a459bfa4818f1078e5ab4208e5771904"
