@@ -37,5 +37,5 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/ColinDuquesnoy/MellowPlayer
-        tag: "3.6.7"
-        commit: "482fd39094854e8c6f8b8ac31dc997a1fed81025"
+        tag: "3.6.8"
+        commit: "4d5412f9fab8d57c37aa0126fff09fba5c9deb6a"
