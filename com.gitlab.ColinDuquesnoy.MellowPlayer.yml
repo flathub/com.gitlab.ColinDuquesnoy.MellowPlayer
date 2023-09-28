@@ -16,7 +16,6 @@ finish-args:
   - --own-name=org.mpris.MediaPlayer2.MellowPlayer3.*
   - --env=TMPDIR=/var/tmp
   - --talk-name=org.kde.StatusNotifierWatcher
-  - --own-name=org.kde.*
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.PowerManagement
   - --talk-name=org.gnome.SessionManager
