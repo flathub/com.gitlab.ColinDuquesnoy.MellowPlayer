@@ -1,8 +1,8 @@
 app-id: com.gitlab.ColinDuquesnoy.MellowPlayer
 runtime: org.kde.Platform
-runtime-version:  "5.15-21.08"
+runtime-version:  "5.15-23.08"
 base: io.qt.qtwebengine.BaseApp
-base-version: "5.15-21.08"
+base-version: "5.15-23.08"
 sdk: org.kde.Sdk
 command: MellowPlayer
 finish-args:
@@ -16,24 +16,28 @@ finish-args:
   - --own-name=org.mpris.MediaPlayer2.MellowPlayer3.*
   - --env=TMPDIR=/var/tmp
   - --talk-name=org.kde.StatusNotifierWatcher
-  - --own-name=org.kde.*
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.PowerManagement
   - --talk-name=org.gnome.SessionManager
 rename-desktop-file: "mellowplayer.desktop"
 rename-icon: "mellowplayer"
+cleanup-commands:
+  - /app/cleanup-BaseApp.sh
 modules:
   - name: libnotify
     buildsystem: meson
     config-opts:
+      - -Dtests=false
+      - -Dintrospection=disabled
       - -Dman=false
+      - -Dgtk_doc=false
       - -Ddocbook_docs=disabled
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.9.tar.xz
-        sha256: 66c0517ed16df7af258e83208faaf5069727dfd66995c4bbc51c16954d674761
+        url: https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz
+        sha256: ee8f3ef946156ad3406fdf45feedbdcd932dbd211ab4f16f75eba4f36fb2f6c0
   - name: MellowPlayer
-    buildsystem: cmake
+    buildsystem: cmake-ninja
     sources:
       - type: git
         url: https://gitlab.com/ColinDuquesnoy/MellowPlayer
